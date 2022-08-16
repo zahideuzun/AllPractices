@@ -38,7 +38,7 @@ namespace TcNoDogrulama
                 else
                 {
                     int[] kimlikNoHane = new int[kimlikNoLength];
-                    for (int i = 0; i < kimlikNoHane.Length; i++)
+                    for (int i = 0; i <= kimlikNoHane.Length-1; i++)
                     {
                         kimlikNoHane[i] = Convert.ToInt32(kimlikNo[i].ToString());
                     }
@@ -54,7 +54,7 @@ namespace TcNoDogrulama
                     else
                     {
                         int sayilarToplam = 0;
-                        for (int i = 0; i < kimlikNoHane.Length-1; i++)
+                        for (int i = 0; i <= kimlikNoHane.Length-2; i++)
                         {
                             sayilarToplam += kimlikNoHane[i];
                         }
